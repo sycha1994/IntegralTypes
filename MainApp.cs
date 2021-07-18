@@ -6,17 +6,21 @@ namespace IntegralTypes
     {
         static void Main(string[] args)
         {
-            byte a = 240;
-            Console.WriteLine($"a={a}");
+            int a = 123;
+            string b = a.ToString();
+            Console.WriteLine(b);
 
-            byte b = 0b1111_0000;
-            Console.WriteLine($"b={b}");
+            float c = 3.14f;
+            string d = c.ToString();
+            Console.WriteLine(d);
 
-            byte c = 0XF0;
-            Console.WriteLine($"c={c}");
+            string e = "123456";
+            int f = Convert.ToInt32(e);
+            Console.WriteLine(f);
 
-            uint d = 0X1234_abcd;
-            Console.WriteLine($"d={d}");
+            string g = "1.2345";
+            float h = float.Parse(g);
+            Console.WriteLine(h);
         }
     }
 }

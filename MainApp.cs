@@ -6,21 +6,18 @@ namespace IntegralTypes
     {
         static void Main(string[] args)
         {
-            var a = 20;
-            Console.WriteLine("Type: {0}, Value: {1}", a.GetType(), a);
+            string greeting = "Good morning.";
 
-            var b = 3.1414213;
-            Console.WriteLine("Type: {0}, Value: {1}", b.GetType(), b);
-
-            var c = "Hello, World!";
-            Console.WriteLine("Type: {0}, Value: {1}", c.GetType(), c);
-
-            var d = new int[] { 10, 20, 30 };
-            Console.Write("Type: {0}, Value: ", d.GetType());
-            foreach (var e in d)
-                Console.Write("{0} ", e);
-
+            Console.WriteLine(greeting.Substring(0, 5));
+            Console.WriteLine(greeting.Substring(5));
             Console.WriteLine();
+
+            string[] arr = greeting.Split(
+                new string[] { " " }, StringSplitOptions.None);
+            Console.WriteLine("Word Count : {0}", arr.Length);
+
+            foreach (string element in arr)
+                Console.WriteLine("{0}", element);
         }
     }
 }

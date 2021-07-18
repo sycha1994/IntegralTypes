@@ -6,25 +6,17 @@ namespace IntegralTypes
     {
         static void Main(string[] args)
         {
-            sbyte a = -10;
-            byte b = 40;
+            byte a = 240;
+            Console.WriteLine($"a={a}");
 
-            Console.WriteLine($"a{a}, b={b}");
+            byte b = 0b1111_0000;
+            Console.WriteLine($"b={b}");
 
-            short c = -30000;
-            ushort d = 60000;
+            byte c = 0XF0;
+            Console.WriteLine($"c={c}");
 
-            Console.WriteLine($"c={c}, d={d}");
-
-            int e = -100_0000;
-            uint f = 3_0000_0000;
-
-            Console.WriteLine($"e{e}, f={f}");
-
-            long g = -5000_0000_0000;
-            ulong h = 200_0000_0000_0000_0000;
-
-            Console.WriteLine($"g={g}, h={h}");
+            uint d = 0X1234_abcd;
+            Console.WriteLine($"d={d}");
         }
     }
 }
